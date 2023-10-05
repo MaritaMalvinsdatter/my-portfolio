@@ -1,0 +1,12 @@
+/* Green */
+
+/* .customBg {
+    background: linear-gradient(to top left, #013220, #001000); 
+} */
+
+
+/* Blue */
+.customBg {
+    background: linear-gradient(to top left, #012640, #000810); 
+    padding: 0 20px;
+}
