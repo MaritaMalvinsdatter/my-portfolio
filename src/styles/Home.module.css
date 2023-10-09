@@ -1,0 +1,50 @@
+.container {
+    background: linear-gradient(to top left, #012640, #000810);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    text-align: center; 
+  }
+  
+  .logo {
+    margin-bottom: 100px;
+    width: 650px;
+    height: auto;
+  }
+  
+  .navLinks a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #CBB26A;
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #A09358, #CBB26A, #A09358); /* #A09358 is a manually darkened version of #CBB26A */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; 
+    border: #CBB26A 1px solid;
+    padding: 10px
+  }
+  
+  .navLinks a:hover {
+    text-decoration: underline;
+  }
+  
+
+  @media (max-width: 768px) { 
+    .logo {
+      width: 400px; 
+      margin: 0 auto;
+    }
+    
+     .navLinks {
+      margin-top: 40px;
+    }
+    
+    .navLinks a {
+      font-size: 1rem; 
+      padding: 8px; 
+    } 
+  }
