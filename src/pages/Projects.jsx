@@ -17,10 +17,34 @@ const projectData = [
         repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
         hostLink: 'https://semester-project-auction-house.netlify.app/'  
     },
-    { image: project2, title: 'Final Exam', description: 'Our final exam was to create an accommodation booking site called Holidaze.There were two aspects to this brief: the customer-facing side of the website where users can book holidays at a venue, and an admin-facing side of the website where users could register and manage venues and bookings at those venues.' },
-    { image: project3, title: 'Semester Project 1', description: 'Our first Semester Project where we had to make a website for a Community Science Museum, where the core target audience was children aged 7-15, and families with younger kids.' },
-    { image: project4, title: 'Freelance', description: 'This was a freelance project where I set up a website for a shop in Trondheim offering local and international products, catering, food courses and lunch/dinners' },
-    { image: project5, title: 'Exam 1', description: 'This was our Exam Project where we had to make a blog of our choosing, and put into practice the skills we had learned during our first year of studies. I chose a travel blog.' },
+    { 
+        image: project2, 
+        title: 'Final Exam', 
+        description: 'Our final exam was to create an accommodation booking site called Holidaze.There were two aspects to this brief: the customer-facing side of the website where users can book holidays at a venue, and an admin-facing side of the website where users could register and manage venues and bookings at those venues.',
+        repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
+        hostLink: 'https://semester-project-auction-house.netlify.app/'  
+    },
+    { 
+        image: project3, 
+        title: 'Semester Project 1', 
+        description: 'Our first Semester Project where we had to make a website for a Community Science Museum, where the core target audience was children aged 7-15, and families with younger kids.',
+        repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
+        hostLink: 'https://semester-project-auction-house.netlify.app/'  
+     },
+    { 
+        image: project4, 
+        title: 'Freelance', 
+        description: 'This was a freelance project where I set up a website for a shop in Trondheim offering local and international products, catering, food courses and lunch/dinners',
+        repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
+        hostLink: 'https://semester-project-auction-house.netlify.app/'  
+    },
+    { 
+        image: project5, 
+        title: 'Exam 1', 
+        description: 'This was our Exam Project where we had to make a blog of our choosing, and put into practice the skills we had learned during our first year of studies. I chose a travel blog.',
+        repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
+        hostLink: 'https://semester-project-auction-house.netlify.app/'  
+    },
 ]
 
 const Projects = () => {
@@ -33,12 +57,12 @@ const Projects = () => {
                     <Card>
                         <Card.Img variant="top" src={project.image} className={styles.cardImage} />
                         <Card.Body className={styles.cardBody}>
-                        <Card.Title>{project.title}</Card.Title>
-                        <Card.Text>
+                        <Card.Title className={styles.cardText}>{project.title}</Card.Title>
+                        <Card.Text className={styles.cardText}>
                             {project.description}
                         </Card.Text>
                         <Button variant="primary" href={project.repoLink} target="_blank" rel="noopener noreferrer">Repo</Button>
-                        <Button variant="secondary" href={project.hostLink} target="_blank" rel="noopener noreferrer" className="ml-2">Host</Button>
+                        <Button variant="secondary" href={project.hostLink} target="_blank" rel="noopener noreferrer" className="ml-4">Host</Button>
                         </Card.Body>
                     </Card>
                 </Col>

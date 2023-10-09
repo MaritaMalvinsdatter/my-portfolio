@@ -3,19 +3,27 @@
     padding: 20px;
 }
 
-h1 {
-    color: white;
+.projectsContainer h1 {
+    color: wheat;
 }
 
 .cardImage {
     width: 100%;     
-    height: 200px;     
-    object-fit: cover; 
+    height: 250px;     
+    /* object-fit: cover;  */
     border-bottom: #012640 solid 1px;
 }
 
 .cardBody {
     background-color: #012640;
-    color: white;
-    
 }
+
+.cardText {
+    color: #CBB26A;
+    background: linear-gradient(90deg, #A09358, #CBB26A, #A09358); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; 
+}
+
