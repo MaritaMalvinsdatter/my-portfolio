@@ -1,29 +1,107 @@
-.projectsContainer {
-    background-color: #012640; 
-    padding: 20px;
+body {
+    background: linear-gradient(135deg, #012640, #00437B);
 }
 
-.projectsContainer h1 {
-    color: wheat;
-}
-
-.cardImage {
-    width: 100%;     
-    height: 250px;     
-    /* object-fit: cover;  */
-    border-bottom: #012640 solid 1px;
-}
-
-.cardBody {
-    background-color: #012640;
-}
-
-.cardText {
+.projectContainer h1 {
     color: #CBB26A;
     background: linear-gradient(90deg, #A09358, #CBB26A, #A09358); 
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent; 
 }
 
+.projectContainer {
+    padding: 20px 0;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.projectColumn {
+    padding: 15px;
+}
+
+.projectCard {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #CBB26A;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projectCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.projectImageContainer {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; 
+    overflow: hidden; 
+}
+
+.projectImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    background-color: #011B2E; 
+    padding: 20px;
+    color: #CBB26A;
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #CBB26A;
+}
+
+.cardText {
+    flex: 1;
+    color: #CBB26A;
+    background: linear-gradient(90deg, #A09358, #CBB26A, #A09358); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.repoButton, .hostButton {
+    margin-right: 5px;
+    border: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.repoButton {
+    background-color: #002855;
+    color: #CBB26A;
+}
+
+.repoButton:hover {
+    background-color: #CBB26A;
+    color: #002855;
+}
+
+.hostButton {
+    background-color: #CBB26A;
+    color: #002855;
+}
+
+.hostButton:hover {
+    background-color: #002855;
+    color: #CBB26A;
+}

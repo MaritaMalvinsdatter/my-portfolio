@@ -20,7 +20,7 @@ const projectData = [
     { 
         image: project2, 
         title: 'Final Exam', 
-        description: 'Our final exam was to create an accommodation booking site called Holidaze.There were two aspects to this brief: the customer-facing side of the website where users can book holidays at a venue, and an admin-facing side of the website where users could register and manage venues and bookings at those venues.',
+        description: 'Our final exam was to create an accommodation booking site called Holidaze.There were two aspects to this brief: the customer-facing side and an admin-facing side',
         repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
         hostLink: 'https://semester-project-auction-house.netlify.app/'  
     },
@@ -49,28 +49,31 @@ const projectData = [
 
 const Projects = () => {
     return (
-        <div className={styles.projectsContainer}>
-            <h1 className="text-center mt-3 mb-5">Projects:</h1>
-            <Row className="g-4"> 
+        <div className={styles.projectContainer}>
+            <h1 className="text-center">Projects:</h1>
+            <Row className="justify-content-center">
                 {projectData.map((project, index) => (
-                <Col md={4} key={index}> 
-                    <Card>
-                        <Card.Img variant="top" src={project.image} className={styles.cardImage} />
-                        <Card.Body className={styles.cardBody}>
-                        <Card.Title className={styles.cardText}>{project.title}</Card.Title>
-                        <Card.Text className={styles.cardText}>
-                            {project.description}
-                        </Card.Text>
-                        <Button variant="primary" href={project.repoLink} target="_blank" rel="noopener noreferrer">Repo</Button>
-                        <Button variant="secondary" href={project.hostLink} target="_blank" rel="noopener noreferrer" className="ml-4">Host</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
+                    <Col key={index} md={4} sm={6} xs={12} className={styles.projectColumn}>
+                        <Card className={styles.projectCard}>
+                            <div className={styles.projectImageContainer}>
+                                <img src={project.image} alt={project.title} className={styles.projectImage} />
+                            </div>
+                            <Card.Body className={styles.cardBody}>
+                                <Card.Title className={styles.cardTitle}>{project.title}</Card.Title>
+                                <Card.Text className={styles.cardText}>{project.description}</Card.Text>
+                                <div className={styles.buttonContainer}>
+                                    <Button variant="primary" href={project.repoLink} target="_blank" className={styles.repoButton}>Repo</Button>
+                                    <Button variant="secondary" href={project.hostLink} target="_blank" className={styles.hostButton}>Host</Button>
+                                </div>
+                            </Card.Body>
+                        </Card>
+                    </Col>
                 ))}
             </Row>
         </div>
     );
 }
+
 
 
 export default Projects;
