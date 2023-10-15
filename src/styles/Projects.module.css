@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(135deg, #012640, #00437B);
+    min-height: 100vh;
 }
 
 .projectContainer h1 {
@@ -13,7 +14,7 @@ body {
 .projectContainer {
     padding: 20px 0;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 0px auto 80px;
 }
 
 .justify-content-center {
@@ -64,7 +65,7 @@ body {
     color: #d0cbc3;
 }
 
-.card-title {
+.cardTitle {
     color: #d0cbc3;
 }
 
