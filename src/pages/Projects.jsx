@@ -59,7 +59,7 @@ const Projects = () => {
                                 <img src={project.image} alt={project.title} className={styles.projectImage} />
                             </div>
                             <Card.Body className={styles.cardBody}>
-                                <Card.Title className={styles.cardTitle}>{project.title}</Card.Title>
+                                <h5 className={styles.cardTitle}>{project.title}</h5>
                                 <Card.Text className={styles.cardText}>{project.description}</Card.Text>
                                 <div className={styles.buttonContainer}>
                                     <Button variant="primary" href={project.repoLink} target="_blank" className={styles.repoButton}>Repo</Button>
