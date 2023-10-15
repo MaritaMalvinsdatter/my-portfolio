@@ -64,8 +64,13 @@ body {
     color: #d0cbc3;
 }
 
+.card-title {
+    color: #d0cbc3;
+}
+
 .cardText {
     flex-grow: 1;
+    color: #d0cbc3;
 }
 
 .buttonContainer {
