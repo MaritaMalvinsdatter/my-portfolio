@@ -34,10 +34,10 @@ function About() {
       </div>
       <hr />
       <div className="mt-4 text-center">
-        <h3 className={styles.heading}>Contact Information</h3>
+        <h3 className={styles.heading}>Contact:</h3>
         <p className={styles.regularText}>marita.malvinsdatter@gmail.com</p>
-        <p className={styles.regularText}><a href="https://www.linkedin.com/in/marita-malvinsdatter-stenersen//">My LinkedIn Profile</a></p>
-        <p className={styles.regularText}><a href="https://github.com/MaritaMalvinsdatter/">My GitHub Profile</a></p>
+        <p><a className={styles.link} href="https://www.linkedin.com/in/marita-malvinsdatter-stenersen//">My LinkedIn Profile</a></p>
+        <p><a className={styles.link} href="https://github.com/MaritaMalvinsdatter/">My GitHub Profile</a></p>
       </div>
     </div>
   );
