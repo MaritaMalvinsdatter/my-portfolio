@@ -1,0 +1,12 @@
+.customBg {
+    background: linear-gradient(to top left, #012640, #000810); 
+}
+
+footer p {
+    color: #d0cbc3;
+    margin: 0 auto;
+    display: flex;
+    min-height: 80px;
+    justify-content: center;
+    align-items: center;
+}
