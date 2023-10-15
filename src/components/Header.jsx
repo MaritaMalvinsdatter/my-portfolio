@@ -12,13 +12,13 @@ const Header = () => {
     return (
         <Navbar expand="lg" variant="dark" className={styles.customBg}>
             <Navbar.Brand as={Link} to="/">
-                <Logo width="500" height="auto" />
+                <Logo className={styles.logo} />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
-                    <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
-                    <Nav.Link as={Link} to="/about">About</Nav.Link>
+                    <Nav.Link className={styles.link} as={Link} to="/projects">Projects</Nav.Link>
+                    <Nav.Link className={styles.link} as={Link} to="/about">About</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

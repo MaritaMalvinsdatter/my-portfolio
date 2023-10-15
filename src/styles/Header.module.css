@@ -1,11 +1,4 @@
-/* Green */
 
-/* .customBg {
-    background: linear-gradient(to top left, #013220, #001000); 
-} */
-
-
-/* Blue */
 .customBg {
     background: linear-gradient(to top left, #012640, #000810); 
     /* height: 100px; */
@@ -13,3 +6,20 @@
     flex-direction: column;
     align-items: center;
 }
+
+.logo {
+    width: 650px;
+    height: auto;
+  }
+
+.link {
+    color: white;
+}
+
+
+@media (max-width: 768px) { 
+    .logo {
+      width: 390px; 
+      margin: 0 auto;
+    }
+  }
