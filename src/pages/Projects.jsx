@@ -1,7 +1,7 @@
 // Projetcs
 
 import React from "react";
-import { Card, Row, Col, Button } from "react-bootstrap";
+import { Card, Row, Col} from "react-bootstrap";
 import styles from "../styles/Projects.module.css"
 import project1 from '../images/project1.png';
 import project2 from '../images/project2.png';
@@ -62,8 +62,22 @@ const Projects = () => {
                                 <h5 className={styles.cardTitle}>{project.title}</h5>
                                 <Card.Text className={styles.cardText}>{project.description}</Card.Text>
                                 <div className={styles.buttonContainer}>
-                                    <Button variant="primary" href={project.repoLink} target="_blank" className={styles.repoButton}>Repo</Button>
-                                    <Button variant="secondary" href={project.hostLink} target="_blank" className={styles.hostButton}>Host</Button>
+                                    <a
+                                    href={project.repoLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`${styles.repoButton} ${styles.customButton}`}
+                                    >
+                                    Repo
+                                    </a>
+                                    <a
+                                    href={project.hostLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`${styles.hostButton} ${styles.customButton}`}
+                                    >
+                                    Host
+                                    </a>
                                 </div>
                             </Card.Body>
                         </Card>
