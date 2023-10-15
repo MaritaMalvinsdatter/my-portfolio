@@ -16,6 +16,11 @@ body {
     margin: 0 auto;
 }
 
+.justify-content-center {
+    display: flex;
+    align-items: stretch;
+}
+
 .projectColumn {
     padding: 15px;
 }
@@ -25,9 +30,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 2px solid #CBB26A;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s, box-shadow 0.2s;
+    flex: 1 0 auto;
 }
 
 .projectCard:hover {
@@ -56,27 +61,16 @@ body {
     flex-direction: column;
     background-color: #011B2E; 
     padding: 20px;
-    color: #CBB26A;
-}
-
-.cardTitle {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #CBB26A;
+    color: #d0cbc3;
 }
 
 .cardText {
-    flex: 1;
-    color: #CBB26A;
-    background: linear-gradient(90deg, #A09358, #CBB26A, #A09358); 
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    flex-grow: 1;
 }
 
 .buttonContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 10px;
 }
 

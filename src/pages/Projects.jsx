@@ -5,11 +5,18 @@ import { Card, Row, Col, Button } from "react-bootstrap";
 import styles from "../styles/Projects.module.css"
 import project1 from '../images/project1.png';
 import project2 from '../images/project2.png';
-import project3 from '../images/project3.png';
-import project4 from '../images/project4.png';
+// import project3 from '../images/project3.png';
+// import project4 from '../images/project4.png';
 import project5 from '../images/project5.png';
 
 const projectData = [
+    { 
+        image: project5, 
+        title: 'Exam 1', 
+        description: 'This was our Exam Project where we had to make a blog of our choosing, and put into practice the skills we had learned during our first year of studies. I chose a travel blog.',
+        repoLink: 'https://github.com/MaritaMalvinsdatter/project-exam-1-MaritaMalvinsdatter', 
+        hostLink: 'https://neon-macaron-1d3b85.netlify.app/'  
+    },
     { 
         image: project1, 
         title: 'Semester Project 2', 
@@ -17,40 +24,33 @@ const projectData = [
         repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
         hostLink: 'https://semester-project-auction-house.netlify.app/'  
     },
+    // { 
+    //     image: project3, 
+    //     title: 'Semester Project 1', 
+    //     description: 'Our first Semester Project where we had to make a website for a Community Science Museum, where the core target audience was children aged 7-15, and families with younger kids.',
+    //     repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
+    //     hostLink: 'https://semester-project-auction-house.netlify.app/'  
+    //  },
+    // { 
+    //     image: project4, 
+    //     title: 'Freelance', 
+    //     description: 'This was a freelance project where I set up a website for a shop in Trondheim offering local and international products, catering, food courses and lunch/dinners',
+    //     repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
+    //     hostLink: 'https://semester-project-auction-house.netlify.app/'  
+    // },
     { 
         image: project2, 
         title: 'Final Exam', 
         description: 'Our final exam was to create an accommodation booking site called Holidaze.There were two aspects to this brief: the customer-facing side and an admin-facing side',
-        repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
-        hostLink: 'https://semester-project-auction-house.netlify.app/'  
-    },
-    { 
-        image: project3, 
-        title: 'Semester Project 1', 
-        description: 'Our first Semester Project where we had to make a website for a Community Science Museum, where the core target audience was children aged 7-15, and families with younger kids.',
-        repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
-        hostLink: 'https://semester-project-auction-house.netlify.app/'  
-     },
-    { 
-        image: project4, 
-        title: 'Freelance', 
-        description: 'This was a freelance project where I set up a website for a shop in Trondheim offering local and international products, catering, food courses and lunch/dinners',
-        repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
-        hostLink: 'https://semester-project-auction-house.netlify.app/'  
-    },
-    { 
-        image: project5, 
-        title: 'Exam 1', 
-        description: 'This was our Exam Project where we had to make a blog of our choosing, and put into practice the skills we had learned during our first year of studies. I chose a travel blog.',
-        repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
-        hostLink: 'https://semester-project-auction-house.netlify.app/'  
+        repoLink: 'https://github.com/MaritaMalvinsdatter/holidaze-exam-two', 
+        hostLink: 'https://holidaze-exam-two.netlify.app/'  
     },
 ]
 
 const Projects = () => {
     return (
         <div className={styles.projectContainer}>
-            <h1 className="text-center">Projects:</h1>
+            <h1 className="text-center mt-4">Projects:</h1>
             <Row className="justify-content-center">
                 {projectData.map((project, index) => (
                     <Col key={index} md={4} sm={6} xs={12} className={styles.projectColumn}>
