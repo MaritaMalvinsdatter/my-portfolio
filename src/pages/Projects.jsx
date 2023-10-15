@@ -5,8 +5,6 @@ import { Card, Row, Col} from "react-bootstrap";
 import styles from "../styles/Projects.module.css"
 import project1 from '../images/project1.png';
 import project2 from '../images/project2.png';
-// import project3 from '../images/project3.png';
-// import project4 from '../images/project4.png';
 import project5 from '../images/project5.png';
 
 const projectData = [
@@ -24,20 +22,6 @@ const projectData = [
         repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
         hostLink: 'https://semester-project-auction-house.netlify.app/'  
     },
-    // { 
-    //     image: project3, 
-    //     title: 'Semester Project 1', 
-    //     description: 'Our first Semester Project where we had to make a website for a Community Science Museum, where the core target audience was children aged 7-15, and families with younger kids.',
-    //     repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
-    //     hostLink: 'https://semester-project-auction-house.netlify.app/'  
-    //  },
-    // { 
-    //     image: project4, 
-    //     title: 'Freelance', 
-    //     description: 'This was a freelance project where I set up a website for a shop in Trondheim offering local and international products, catering, food courses and lunch/dinners',
-    //     repoLink: 'https://github.com/MaritaMalvinsdatter/semester-project-2', 
-    //     hostLink: 'https://semester-project-auction-house.netlify.app/'  
-    // },
     { 
         image: project2, 
         title: 'Final Exam', 
