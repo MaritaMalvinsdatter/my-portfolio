@@ -9,8 +9,7 @@ function Home() {
       <Logo className={styles.logo} />
       <nav className={styles.navLinks}>
         <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/about">About</Link>
+        <Link to="/about">About</Link> */
       </nav>
     </div>
   );
